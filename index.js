@@ -18,12 +18,12 @@ app.get('/api/students', (req, res) => {
     res.status(200).send(studentData)
 })
 
-// app.get('/api/rooms', (req, res) => {
-//     if (!roomData) {
-//         res.status(404)
-//     }
-//     res.status(200).send(roomData)
-// })
+app.get('/api/rooms', (req, res) => {
+    if (!roomData) {
+        res.status(404)
+    }
+    res.status(200).send(roomData)
+})
 
 
 
